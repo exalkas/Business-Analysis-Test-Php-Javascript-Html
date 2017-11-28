@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<script src="alljs.js" type="text/javascript">
+<!--
+//-->
+</script>
+<style>
+body{
+	font-family: "Open Sans";
+	font-size:10pt;
+
+}
+.page{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+	visibility: hidden;
+}
+.btn {border: 1px solid #999;
+background: #DDD;cursor:pointer;}
+
+</style>
+
+<body onload="fillin()" >
+<div style="width:500px;margin-left:auto;margin-right:auto;">
+
+<form id="form1" name="form1" method="post" action="bat.php" onsubmit="return showLayer12()">
+  <div id="page1" class="page"  style="visibility:visible;">
+<div  style="width:500px;color:#232323;"><span style="font-weight:bold;">Business Analysis Test</span><hr /><p>Welcome to the Business Analysis Test page!</p>
+
+<p>We know that you want to <span style="font-weight:bold;">improve</span> the situation in your business at all levels.
+The evaluation test, aims to help you find the <span style="font-weight:bold;">causes</span> that prevent your business grow.</p>
+
+<p>In completing the test, it is important to keep in mind the <span style="font-weight:bold;">current</span> situation in your business.
+
+You will need approximately 15 minutes to complete the test.</p><p> Then, a specialist <span style="font-weight:bold;">consultant</span> will contact you  to give you an analysis of the results.</p>
+
+Thank you.</p>
+<p style="font-weight:bold;">Personal details</p><hr /></div>
+ <table cellspacing="2" cellpadding="2" border="1">
+ <tr>
+   <td align="right">Name<font color="#ff0000">*</font></td>
+   <td><input type="text" name="Name" /></td>
+   <td align="right">Surname<font color="#ff0000">*</font></td>
+   <td><input type="text" name="Surname" /></td>
+ </tr>
+  <tr>
+   <td align="right">Company Name</td>
+   <td><input type="text" name="Companyname" /></td>
+   <td align="right">Position</td>
+   <td><input type="text" name="Position" /></td>
+ </tr>
+  <tr>
+   <td align="right">Business Area</td>
+   <td><input type="text" name="Businessarea" /></td>
+   <td align="right">Number of employees</td>
+   <td><input type="text" name="Employees" /></td>
+ </tr>
+  <tr>
+   <td align="right">Address</td>
+   <td><input type="text" name="Address" /></td>
+   <td align="right">City</td>
+   <td><input type="text" name="City" /></td>
+ </tr>
+ <tr>
+   <td align="right">Email<font color="#ff0000">*</font></td>
+   <td><input type="text" name="Email" /></td>
+   <td align="right">Zip Code</td>
+   <td><input type="text" name="Zip" /></td>
+ </tr>
+ <tr>
+   <td align="right">Telephone<font color="#ff0000">*</font></td>
+   <td><input type="text" name="Telephone" /></td>
+   <td align="right">Fax</td>
+   <td><input type="text" name="Fax" /></td>
+ </tr>
+ </table>
+ <p>
+      <label for="code">Write code below > <span id="txtCaptchaDiv" style="color:#F00"></span><!-- this is where the script will place the generated code --> 
+      <input type="hidden" id="txtCaptcha" /></label><!-- this is where the script will place a copy of the code for validation: this is a hidden field -->
+      <input type="text" name="txtInput" id="txtInput" size="30" onkeydown="testForEnter();"/>
+    </p>
+<div align="center"><small style="text-align:center">reload the page to change the code</small></div>
+<p align="right"><input type="button" id="C1" value="Continue" class="btn" onClick="showLayer2()" ></p>
+</div>
+<div id="page2" class="page">
+<label id="p001"></label> <br />
+<label  id="a1_1"></label>
+<label id="a1_2"></label>
+<label id="a1_3"></label>
+<br /><br />
+<label id="p002"></label> <br />
+<label  id="a2_1"></label>
+<label id="a2_2"></label>
+<label id="a2_3"></label>
+<br /><br />
+<label id="p003"></label> <br />
+<label  id="a3_1"></label>
+<label id="a3_2"></label>
+<label id="a3_3"></label>
+<br /><br />
+<label id="p004"></label> <br />
+<label  id="a4_1"></label>
+<label id="a4_2"></label>
+<label id="a4_3"></label>
+<br /><br />
+<label id="p005"></label> <br />
+<label  id="a5_1"></label>
+<label id="a5_2"></label>
+<label id="a5_3"></label>
+<br /><br />
+<label id="p006"></label> <br />
+<label  id="a6_1"></label>
+<label id="a6_2"></label>
+<label id="a6_3"></label>
+<br /><br />
+<label id="p007"></label> <br />
+<label  id="a7_1"></label>
+<label id="a7_2"></label>
+<label id="a7_3"></label>
+<br /><br />
+<label id="p008"></label> <br />
+<label  id="a8_1"></label>
+<label id="a8_2"></label>
+<label id="a8_3"></label>
+<br /><br />
+<label id="p009"></label> <br />
+<label  id="a9_1"></label>
+<label id="a9_2"></label>
+<label id="a9_3"></label>
+<br /><br />
+<label id="p010"></label> <br />
+<label  id="a10_1"></label>
+<label id="a10_2"></label>
+<label id="a10_3"></label>
+<br />
+<p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page1')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer3()" class="btn"></p>
+</div>
+<div id="page3" class="page">
+<label id="p011"></label> <br />
+<label  id="a11_1"></label>
+<label id="a11_2"></label>
+<label id="a11_3"></label>
+<br /><br />
+<label id="p012"></label> <br />
+<label  id="a12_1"></label>
+<label id="a12_2"></label>
+<label id="a12_3"></label>
+<br /><br />
+<label id="p013"></label> <br />
+<label  id="a13_1"></label>
+<label id="a13_2"></label>
+<label id="a13_3"></label>
+<br /><br />
+<label id="p014"></label> <br />
+<label  id="a14_1"></label>
+<label id="a14_2"></label>
+<label id="a14_3"></label>
+<br /><br />
+<label id="p015"></label> <br />
+<label  id="a15_1"></label>
+<label id="a15_2"></label>
+<label id="a15_3"></label>
+<br /><br />
+<label id="p016"></label> <br />
+<label  id="a16_1"></label>
+<label id="a16_2"></label>
+<label id="a16_3"></label>
+<br /><br />
+<label id="p017"></label> <br />
+<label  id="a17_1"></label>
+<label id="a17_2"></label>
+<label id="a17_3"></label>
+<br /><br />
+<label id="p018"></label> <br />
+<label  id="a18_1"></label>
+<label id="a18_2"></label>
+<label id="a18_3"></label>
+<br /><br />
+<label id="p019"></label> <br />
+<label  id="a19_1"></label>
+<label id="a19_2"></label>
+<label id="a19_3"></label>
+<br /><br />
+<label id="p020"></label> <br />
+<label  id="a20_1"></label>
+<label id="a20_2"></label>
+<label id="a20_3"></label>
+<br />
+<p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page2')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer4()" class="btn"></p>
+</div>
+ <div id="page4" class="page">
+<label id="p021"></label> <br />
+<label  id="a21_1"></label>
+<label id="a21_2"></label>
+<label id="a21_3"></label>
+<br /><br />
+<label id="p022"></label> <br />
+<label  id="a22_1"></label>
+<label id="a22_2"></label>
+<label id="a22_3"></label>
+<br /><br />
+<label id="p023"></label> <br />
+<label  id="a23_1"></label>
+<label id="a23_2"></label>
+<label id="a23_3"></label>
+<br /><br />
+<label id="p024"></label> <br />
+<label  id="a24_1"></label>
+<label id="a24_2"></label>
+<label id="a24_3"></label>
+<br /><br />
+<label id="p025"></label> <br />
+<label  id="a25_1"></label>
+<label id="a25_2"></label>
+<label id="a25_3"></label>
+<br /><br />
+<label id="p026"></label> <br />
+<label  id="a26_1"></label>
+<label id="a26_2"></label>
+<label id="a26_3"></label>
+<br /><br />
+<label id="p027"></label> <br />
+<label  id="a27_1"></label>
+<label id="a27_2"></label>
+<label id="a27_3"></label>
+<br /><br />
+<label id="p028"></label> <br />
+<label  id="a28_1"></label>
+<label id="a28_2"></label>
+<label id="a28_3"></label>
+<br /><br />
+<label id="p029"></label> <br />
+<label  id="a29_1"></label>
+<label id="a29_2"></label>
+<label id="a29_3"></label>
+<br /><br />
+<label id="p030"></label> <br />
+<label  id="a30_1"></label>
+<label id="a30_2"></label>
+<label id="a30_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page3')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer5()" class="btn"></p>
+</div>
+<div id="page5" class="page">
+<label id="p031"></label> <br />
+<label  id="a31_1"></label>
+<label id="a31_2"></label>
+<label id="a31_3"></label>
+<br /><br />
+<label id="p032"></label> <br />
+<label  id="a32_1"></label>
+<label id="a32_2"></label>
+<label id="a32_3"></label>
+<br /><br />
+<label id="p033"></label> <br />
+<label  id="a33_1"></label>
+<label id="a33_2"></label>
+<label id="a33_3"></label>
+<br /><br />
+<label id="p034"></label> <br />
+<label  id="a34_1"></label>
+<label id="a34_2"></label>
+<label id="a34_3"></label>
+<br /><br />
+<label id="p035"></label> <br />
+<label  id="a35_1"></label>
+<label id="a35_2"></label>
+<label id="a35_3"></label>
+<br /><br />
+<label id="p036"></label> <br />
+<label  id="a36_1"></label>
+<label id="a36_2"></label>
+<label id="a36_3"></label>
+<br /><br />
+<label id="p037"></label> <br />
+<label  id="a37_1"></label>
+<label id="a37_2"></label>
+<label id="a37_3"></label>
+<br /><br />
+<label id="p038"></label> <br />
+<label  id="a38_1"></label>
+<label id="a38_2"></label>
+<label id="a38_3"></label>
+<br /><br />
+<label id="p039"></label> <br />
+<label  id="a39_1"></label>
+<label id="a39_2"></label>
+<label id="a39_3"></label>
+<br /><br />
+<label id="p040"></label> <br />
+<label  id="a40_1"></label>
+<label id="a40_2"></label>
+<label id="a40_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page4')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer6()" class="btn"></p>
+ </div>
+ <div id="page6" class="page">
+<label id="p041"></label> <br />
+<label  id="a41_1"></label>
+<label id="a41_2"></label>
+<label id="a41_3"></label>
+<br /><br />
+<label id="p042"></label> <br />
+<label  id="a42_1"></label>
+<label id="a42_2"></label>
+<label id="a42_3"></label>
+<br /><br />
+<label id="p043"></label> <br />
+<label  id="a43_1"></label>
+<label id="a43_2"></label>
+<label id="a43_3"></label>
+<br /><br />
+<label id="p044"></label> <br />
+<label  id="a44_1"></label>
+<label id="a44_2"></label>
+<label id="a44_3"></label>
+<br /><br />
+<label id="p045"></label> <br />
+<label  id="a45_1"></label>
+<label id="a45_2"></label>
+<label id="a45_3"></label>
+<br /><br />
+<label id="p046"></label> <br />
+<label  id="a46_1"></label>
+<label id="a46_2"></label>
+<label id="a46_3"></label>
+<br /><br />
+<label id="p047"></label> <br />
+<label  id="a47_1"></label>
+<label id="a47_2"></label>
+<label id="a47_3"></label>
+<br /><br />
+<label id="p048"></label> <br />
+<label  id="a48_1"></label>
+<label id="a48_2"></label>
+<label id="a48_3"></label>
+<br /><br />
+<label id="p049"></label> <br />
+<label  id="a49_1"></label>
+<label id="a49_2"></label>
+<label id="a49_3"></label>
+<br /><br />
+<label id="p050"></label> <br />
+<label  id="a50_1"></label>
+<label id="a50_2"></label>
+<label id="a50_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page5')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer7()" class="btn"></p>
+ </div>
+  <div id="page7" class="page">
+<label id="p051"></label> <br />
+<label  id="a51_1"></label>
+<label id="a51_2"></label>
+<label id="a51_3"></label>
+<br /><br />
+<label id="p052"></label> <br />
+<label  id="a52_1"></label>
+<label id="a52_2"></label>
+<label id="a52_3"></label>
+<br /><br />
+<label id="p053"></label> <br />
+<label  id="a53_1"></label>
+<label id="a53_2"></label>
+<label id="a53_3"></label>
+<br /><br />
+<label id="p054"></label> <br />
+<label  id="a54_1"></label>
+<label id="a54_2"></label>
+<label id="a54_3"></label>
+<br /><br />
+<label id="p055"></label> <br />
+<label  id="a55_1"></label>
+<label id="a55_2"></label>
+<label id="a55_3"></label>
+<br /><br />
+<label id="p056"></label> <br />
+<label  id="a56_1"></label>
+<label id="a56_2"></label>
+<label id="a56_3"></label>
+<br /><br />
+<label id="p057"></label> <br />
+<label  id="a57_1"></label>
+<label id="a57_2"></label>
+<label id="a57_3"></label>
+<br /><br />
+<label id="p058"></label> <br />
+<label  id="a58_1"></label>
+<label id="a58_2"></label>
+<label id="a58_3"></label>
+<br /><br />
+<label id="p059"></label> <br />
+<label  id="a59_1"></label>
+<label id="a59_2"></label>
+<label id="a59_3"></label>
+<br /><br />
+<label id="p060"></label> <br />
+<label  id="a60_1"></label>
+<label id="a60_2"></label>
+<label id="a60_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page6')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer8()" class="btn"></p>
+ </div>
+   <div id="page8" class="page">
+<label id="p061"></label> <br />
+<label  id="a61_1"></label>
+<label id="a61_2"></label>
+<label id="a61_3"></label>
+<br /><br />
+<label id="p062"></label> <br />
+<label  id="a62_1"></label>
+<label id="a62_2"></label>
+<label id="a62_3"></label>
+<br /><br />
+<label id="p063"></label> <br />
+<label  id="a63_1"></label>
+<label id="a63_2"></label>
+<label id="a63_3"></label>
+<br /><br />
+<label id="p064"></label> <br />
+<label  id="a64_1"></label>
+<label id="a64_2"></label>
+<label id="a64_3"></label>
+<br /><br />
+<label id="p065"></label> <br />
+<label  id="a65_1"></label>
+<label id="a65_2"></label>
+<label id="a65_3"></label>
+<br /><br />
+<label id="p066"></label> <br />
+<label  id="a66_1"></label>
+<label id="a66_2"></label>
+<label id="a66_3"></label>
+<br /><br />
+<label id="p067"></label> <br />
+<label  id="a67_1"></label>
+<label id="a67_2"></label>
+<label id="a67_3"></label>
+<br /><br />
+<label id="p068"></label> <br />
+<label  id="a68_1"></label>
+<label id="a68_2"></label>
+<label id="a68_3"></label>
+<br /><br />
+<label id="p069"></label> <br />
+<label  id="a69_1"></label>
+<label id="a69_2"></label>
+<label id="a69_3"></label>
+<br /><br />
+<label id="p070"></label> <br />
+<label  id="a70_1"></label>
+<label id="a70_2"></label>
+<label id="a70_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page7')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer9()" class="btn"></p>
+ </div>
+   <div id="page9" class="page">
+<label id="p071"></label> <br />
+<label  id="a71_1"></label>
+<label id="a71_2"></label>
+<label id="a71_3"></label>
+<br /><br />
+<label id="p072"></label> <br />
+<label  id="a72_1"></label>
+<label id="a72_2"></label>
+<label id="a72_3"></label>
+<br /><br />
+<label id="p073"></label> <br />
+<label  id="a73_1"></label>
+<label id="a73_2"></label>
+<label id="a73_3"></label>
+<br /><br />
+<label id="p074"></label> <br />
+<label  id="a74_1"></label>
+<label id="a74_2"></label>
+<label id="a74_3"></label>
+<br /><br />
+<label id="p075"></label> <br />
+<label  id="a75_1"></label>
+<label id="a75_2"></label>
+<label id="a75_3"></label>
+<br /><br />
+<label id="p076"></label> <br />
+<label  id="a76_1"></label>
+<label id="a76_2"></label>
+<label id="a76_3"></label>
+<br /><br />
+<label id="p077"></label> <br />
+<label  id="a77_1"></label>
+<label id="a77_2"></label>
+<label id="a77_3"></label>
+<br /><br />
+<label id="p078"></label> <br />
+<label  id="a78_1"></label>
+<label id="a78_2"></label>
+<label id="a78_3"></label>
+<br /><br />
+<label id="p079"></label> <br />
+<label  id="a79_1"></label>
+<label id="a79_2"></label>
+<label id="a79_3"></label>
+<br /><br />
+<label id="p080"></label> <br />
+<label  id="a80_1"></label>
+<label id="a80_2"></label>
+<label id="a80_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page8')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer10()" class="btn"></p>
+</div>
+<div id="page10" class="page">
+<label id="p081"></label> <br />
+<label  id="a81_1"></label>
+<label id="a81_2"></label>
+<label id="a81_3"></label>
+<br /><br />
+<label id="p082"></label> <br />
+<label  id="a82_1"></label>
+<label id="a82_2"></label>
+<label id="a82_3"></label>
+<br /><br />
+<label id="p083"></label> <br />
+<label  id="a83_1"></label>
+<label id="a83_2"></label>
+<label id="a83_3"></label>
+<br /><br />
+<label id="p084"></label> <br />
+<label  id="a84_1"></label>
+<label id="a84_2"></label>
+<label id="a84_3"></label>
+<br /><br />
+<label id="p085"></label> <br />
+<label  id="a85_1"></label>
+<label id="a85_2"></label>
+<label id="a85_3"></label>
+<br /><br />
+<label id="p086"></label> <br />
+<label  id="a86_1"></label>
+<label id="a86_2"></label>
+<label id="a86_3"></label>
+<br /><br />
+<label id="p087"></label> <br />
+<label  id="a87_1"></label>
+<label id="a87_2"></label>
+<label id="a87_3"></label>
+<br /><br />
+<label id="p088"></label> <br />
+<label  id="a88_1"></label>
+<label id="a88_2"></label>
+<label id="a88_3"></label>
+<br /><br />
+<label id="p089"></label> <br />
+<label  id="a89_1"></label>
+<label id="a89_2"></label>
+<label id="a89_3"></label>
+<br /><br />
+<label id="p090"></label> <br />
+<label id="a90_1"></label>
+<label id="a90_2"></label>
+<label id="a90_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page9')" class="btn"><input type="button" id="C2" value="Continue" onClick="showLayer11()" class="btn"></p>
+ </div>
+  <div id="page11" class="page">
+<label id="p091"></label> <br />
+<label  id="a91_1"></label>
+<label id="a91_2"></label>
+<label id="a91_3"></label>
+<br /><br />
+<label id="p092"></label> <br />
+<label  id="a92_1"></label>
+<label id="a92_2"></label>
+<label id="a92_3"></label>
+<br /><br />
+<label id="p093"></label> <br />
+<label  id="a93_1"></label>
+<label id="a93_2"></label>
+<label id="a93_3"></label>
+<br /><br />
+<label id="p094"></label> <br />
+<label  id="a94_1"></label>
+<label id="a94_2"></label>
+<label id="a94_3"></label>
+<br /><br />
+<label id="p095"></label> <br />
+<label  id="a95_1"></label>
+<label id="a95_2"></label>
+<label id="a95_3"></label>
+<br /><br />
+<label id="p096"></label> <br />
+<label  id="a96_1"></label>
+<label id="a96_2"></label>
+<label id="a96_3"></label>
+<br /><br />
+<label id="p097"></label> <br />
+<label  id="a97_1"></label>
+<label id="a97_2"></label>
+<label id="a97_3"></label>
+<br /><br />
+<label id="p098"></label> <br />
+<label  id="a98_1"></label>
+<label id="a98_2"></label>
+<label id="a98_3"></label>
+<br /><br />
+<label id="p099"></label> <br />
+<label  id="a99_1"></label>
+<label id="a99_2"></label>
+<label id="a99_3"></label>
+<br /><br />
+<label id="p100"></label> <br />
+<label  id="a100_1"></label>
+<label id="a100_2"></label>
+<label id="a100_3"></label>
+<br />
+ <p align="right"><input type="button" id="B1" value="Go Back" onClick="showLayer('page10')" class="btn"></p>
+<input type="submit" class="btn"  />
+</div>
+</div>
+</form>
+<script type="text/javascript">
+	 //Generates the captcha function    
+	var a = Math.ceil(Math.random() * 9)+ '';
+	var b = Math.ceil(Math.random() * 9)+ '';       
+	var c = Math.ceil(Math.random() * 9)+ '';  
+	var d = Math.ceil(Math.random() * 9)+ '';  
+	var e = Math.ceil(Math.random() * 9)+ '';  
+	  
+	var code = a + b + c + d + e;
+	document.getElementById("txtCaptcha").value = code;
+	document.getElementById("txtCaptchaDiv").innerHTML = code;	
+
+</script>
+</div>
+</body>
+</html>
